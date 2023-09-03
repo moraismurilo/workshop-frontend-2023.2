@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/componentes/header.css">
+    <script src="js/script.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          
+    <title>Star Wars</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoHeader">
+            <img src="/src/img/logo.png" alt="Star Wars">
+        </div>
+        <div class="navHeader">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home">    
+        <div class="conteudo">
+            <div class="headerConteudo">
+                <div>
+                    <h1>Escolha seu Lado</h1>
+                </div>
+            </div>
+            <div class="textoConteudo">
+                <button id="option-a"><img src="./img/jedi.png" alt="jedi"> <p>Ordem Jedi</p></button>
+                <button id="option-b"><img src="./img/sith.png" alt="sith"><p>Sith</p></button>
+              </div>
+              <div id="result" class="textoab"></div>
+              <div id="hidden-text-a" style="display: none;" >A Ordem Jedi foi uma antiga organização monástica de guarnição da paz unificada 
+                pela sua crença na Força, especificamente o lado luminoso. Os Jedi eram os guardiões da paz e da justiça na República Galáctica 
+                por milhares de anos antes das Guerras Clônicas.</div>
+              <div id="hidden-text-b" style="display: none;">Os Sith são uma ordem de usuários do lado negro da Força que existe há milhares de anos. 
+                Eles acreditam que o lado negro é a verdadeira natureza da Força e que o poder deve ser conquistado, não concedido. 
+                Os Sith são conhecidos por sua ambição, crueldade e uso de técnicas de manipulação e medo. </div>
+              <button id="back" style="display: none;">Voltar</button>
+        </div>      
+    </section>
+    <section class="galeria" id="galeria">
+        <div class="headerGaleria">
+            <header>
+                <h1>Galeria</h1>
+            </header>
+        </div>
+        <div class="cardgaleria">
+            <div class="card">
+                <div class="pesquisa">
+                 <label for="searchInput">Pesquisar:</label>
+                  <input type="text" id="searchInput" class="search" placeholder="Digite um Personagem"/>
+                  <button id="searchButton">Pesquisar</button>
+                     <h2>Resultados da Pesquisa</h2>
+                        <ul>
+                            <li>Nome: <span id="name"></span></li>
+                            <li>Massa: <span id="mass"></span></li>
+                            <li>Cor do cabelo: <span id="hair_color"></span></li>
+                            <li>Cor da pele: <span id="skin_color"></span></li>
+                            <li>Cor dos olhos: <span id="eye_color"></span></li>
+                            <li>Ano de nascimento: <span id="birth_year"></span></li>
+                            <li>Gênero: <span id="gender"></span></li>
+                        </ul>
+                </div>
+            </div>
+</section>
+    <section class="contato" id="contato">
+        <div class="textoContato">
+            <h1 id="contatos">Entre em contato</h1>
+            <h3>com a gente e mande suas sugestões</h3>
+        </div>
+        <div class="formContato">
+            <form action="#" method="post" class="formulario">
+                <div class="nomesContato">
+                    <input type="text" name="nome" id="nome" placeholder="Primeiro Nome">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </div>
+                <div class="emailContato">
+                    <input type="email" name="email" id="email" placeholder="Digite um email valido" required>
+                </div>
+
+                <div class="textContato">
+                    <textarea name="textoContato" id="textoContato" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,248 @@
+* {
+    font-family: 'Poller One', cursive;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    background-image: url(/src/img/galaxia.jpg);
+}
+
+.home {
+    width: 100%;
+    height: 80vh;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.home .conteudo {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: xx-large;
+    color: white;
+}
+
+.conteudo .textoConteudo {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    padding: auto;
+    margin: auto;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size:  xx-large;
+    
+}
+
+button {
+    background-color: black;
+    margin: 5vh;
+    width: 40%;
+    font-size: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: 0.4s;
+    padding: 0.8rem 1.8rem;
+    color: white;
+    
+}
+
+button:hover {
+    transform: scale(1.5);
+}
+
+button img {
+    width: 80px;
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    justify-content: center;
+  }
+
+.textoab {
+    width: 80%;
+    margin: 5vh;
+}
+
+.card .pesquisa  {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    background-color: #0f5769;
+    box-shadow: 2px 2px 0px #5a5a5a,
+        -2px -2px 2px #ffffff;
+    font-size: 18px;
+}
+
+.galeria {
+
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: large;
+}
+
+.pesquisa button {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.4s;
+    padding: 0.4rem 1.8rem;
+}
+
+.pesquisa button:hover {
+    transform: scale(1.5);
+    background-color: rgb(0, 145, 2)
+}   
+
+
+.search {
+    width: 60%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+
+.contato {
+    width: 100%;
+    height: 100vh;
+    margin: 500px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .textoContato {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contato .formContato {
+    width: 50%;
+    height: 100%;
+    background-color: #570000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formContato .formulario {
+    width: 80%;
+    height: 70%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.formulario .nomesContato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nomesContato input {
+    width: 45%;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.formulario .emailContato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emailContato input {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.formulario .textContato {
+    width: 100%;
+    height: 30vh;
+}
+
+.textContato textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.formulario button {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.4s;
+    padding: 0.4rem 1.8rem;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 145, 2);
+}
+
+#contatos {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
